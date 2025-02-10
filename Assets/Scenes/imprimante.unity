@@ -414,7 +414,7 @@ PrefabInstance:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7000853
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -424,7 +424,7 @@ PrefabInstance:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.225
+      value: 0.727
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
@@ -967,6 +967,45 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9999999, y: 1.9999995, z: 0.00000007308992}
   m_Center: {x: 0.00000011920929, y: -0.0000009536743, z: 0}
+--- !u!59 &1423293547
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423293540}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0.9999988, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -2.0960693, y: 0.9207109, z: -6.0281086}
+  serializedVersion: 2
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_ExtendedLimits: 0
+  m_UseAcceleration: 0
+  m_Limits:
+    min: 0
+    max: 179.08636
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1001 &1848690904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -988,7 +1027,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4a4343747a1fc1a5b9f57d87db2cc008,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0010004044
+      value: -0.073
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4a4343747a1fc1a5b9f57d87db2cc008,
         type: 3}
@@ -1172,6 +1211,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1423293544}
+    - targetCorrespondingSourceObject: {fileID: -1857309847194865932, guid: 4a4343747a1fc1a5b9f57d87db2cc008,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1423293547}
   m_SourcePrefab: {fileID: 100100000, guid: 4a4343747a1fc1a5b9f57d87db2cc008, type: 3}
 --- !u!1 &2121589302
 GameObject:
