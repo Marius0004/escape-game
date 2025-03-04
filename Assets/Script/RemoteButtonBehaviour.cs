@@ -1,18 +1,29 @@
 
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.UI;
 
-public class RemoteButtonBehaviour : MonoBehaviour
+public class ButtonClickHandler : MonoBehaviour
 {
-	public bool isOn  = false;
+    // L'image à afficher
+    public GameObject imageToShow;
 
-	public void ToggleSwitch()
-	{
-		// Nous allons restreindre le fait de pouvoir éteindre l'imprimante.
-		if (!isOn)
-		{
-			isOn = true;
-			transform.Rotate(new Vector3(0f, -50f, 0f));
-		}
-	}
+    void Start()
+    {
+        // On s'assure que l'image est désactivée au début
+        if (imageToShow != null)
+        {
+            imageToShow.SetActive(false);
+        }
+    }
+
+    // Fonction appelée lors du clic sur le bouton
+    public void OnButtonClick()
+    {
+        if (imageToShow != null)
+        {
+			
+            // Afficher l'image
+            imageToShow.SetActive(true);
+        }
+    }
 }
