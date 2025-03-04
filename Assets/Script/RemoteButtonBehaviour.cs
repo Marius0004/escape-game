@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-public class RemoteButtonBehqviour : MonoBehaviour
+public class RemoteButtonBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public bool isOn  = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public void ToggleSwitch()
+	{
+		// Nous allons restreindre le fait de pouvoir éteindre l'imprimante.
+		if (!isOn)
+		{
+			isOn = true;
+			transform.Rotate(new Vector3(0f, -50f, 0f));
+		}
+	}
 }
