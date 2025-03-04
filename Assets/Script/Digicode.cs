@@ -5,6 +5,7 @@ using System.Collections;  // Pour utiliser les coroutines
 public class Digicode : MonoBehaviour
 {
     public TMP_Text displayText;  // Référence à ton TextMeshPro
+    public GameObject blockedWall;
     public string codeSecret = "1234";  // Le code secret à entrer
     private string currentInput = "";  // Pour stocker l'input de l'utilisateur
 
@@ -24,6 +25,7 @@ public class Digicode : MonoBehaviour
             // Affiche "Code correct !" et attend quelques secondes avant de réinitialiser
             displayText.text = "Code correct !";  
             StartCoroutine(ResetAfterDelay(2f));  // Attendre 2 secondes avant de réinitialiser l'affichage
+            Destroy(blockedWall);
         }
         else
         {
